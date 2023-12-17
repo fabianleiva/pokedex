@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: Mulish, sans-serif;
+  color: #262523;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  width: 95%;
+  border-radius: 100px 100px 100px 100px;
+  height: 5rem;
+  margin: 1rem;
+}
+
+.navigationBar {
+  display: flex;
+  height: auto;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nameSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  color: #fafafa;
+  width: 11.5rem;
+}
+
+.nameSection:hover {
+  animation: shake 0.3s;
+  cursor: pointer;
+}
+
+.linkSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  color: white;
+}
+
+h3 {
+  margin: 0;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25%,
+  75% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+
+.animate__animated.animate__fadeIn {
+  animation-delay: 0.1s;
+  --animate-duration: 1s;
+}
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 1s;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e2e2;
+  border-radius: 100px 100px 100px 100px;
+  height: 2rem;
+  width: 95%;
+  margin: 1rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+h4 {
+  margin-bottom: 2rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.65rem;
+}
+
+select {
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.active {
+  color: #3466af;
+}
+
+.inactive {
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 28rem !important;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+}
+
+.card-img-top {
+  width: 15rem;
+  padding: 1rem;
+}
+
+.list-group-item {
+  font-size: 0.8rem;
+}
+
+.pikachu_img {
+  width: 2.5rem;
+}
+
+.pokemon_logo {
+  width: 20rem;
+}
+
+@media screen and (max-width: 767px) {
+  .webName {
+    display: none;
+  }
+  .pikachu_img {
+    width: 3.5rem;
+  }
+}
